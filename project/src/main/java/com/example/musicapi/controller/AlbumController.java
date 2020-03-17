@@ -11,8 +11,12 @@ import java.util.List;
 @RequestMapping("/api/1")
 public class AlbumController {
 
+    private final IAlbumService albumService;
+
     @Autowired
-    private IAlbumService albumService;
+    public AlbumController(IAlbumService albumService) { /*IOC - for Constructor*/
+        this.albumService = albumService;
+    }
 
     @GetMapping("/album")
     public List<Album> searchAll() {
