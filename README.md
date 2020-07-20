@@ -1,2 +1,2 @@
 # music-Api
-RESTFul Api with Spring framework
+Basic RESTFul Api with Spring framework
